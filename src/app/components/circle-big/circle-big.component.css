@@ -1,0 +1,122 @@
+/************ Circle *****************/
+.circular-progress {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+.circular-progress-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #bdbbbb;
+  border-radius: 50%;
+  overflow: hidden;
+;
+
+  
+}
+
+.segment {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 30vw;
+  height: 30vh;
+  background: #ffd900;;
+  border:none;
+  transform-origin: 0 0;
+  border-radius: 100px;
+}
+
+.circular-progress-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 105px;
+  height: 105px;
+  transform: translateX(-50%) translateY(-50%);
+  background: #472759;
+  border-radius: 50%;
+  box-shadow: inset white 0px 0px 0px 7px; 
+  border: none;
+}
+
+.circular-progress-value {
+  position: absolute;
+  font-size:.6rem;
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  
+  transform: translateX(-50%) translateY(-50%);
+}
+
+ /* ****************** */
+         /* Responsive */
+    /* ****************** */
+
+@media (max-width: 767px) {
+
+
+.circular-progress {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+.circular-progress-circle {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: #bdbbbb;
+  border-radius: 50%;
+  overflow: hidden;
+;
+
+  
+}
+
+.segment {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 30vw;
+  height: 30vh;
+  background: #ffd900;;
+  border:none;
+  transform-origin: 0 0;
+  border-radius: 100px;
+}
+
+.circular-progress-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translateX(-50%) translateY(-50%);
+  background: #472759;
+  border-radius: 50%;
+  box-shadow: inset white 0px 0px 0px 7px; 
+  border: none;
+}
+
+.circular-progress-value {
+  position: absolute;
+  font-size:.6rem;
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  
+  transform: translateX(-50%) translateY(-50%);
+}
+}

@@ -1,0 +1,61 @@
+.sidebar {
+    height: 100vh;
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+   
+}
+
+.line {
+    position: relative;
+}
+.line::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 275px;
+    height: 1.8px;
+    background: #999;
+    z-index: 10;
+    
+}
+#btn {
+  display: flex;
+  justify-content: right;
+
+} 
+button {
+    background: #472759;
+}
+
+
+/* RESPONSISVE */
+
+@media (max-width: 767px) {
+    .sidebar {
+        height: 50vh;
+    }
+  
+
+    
+    h4,
+    h6,
+    p {
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+    }
+    .line::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: 2px;
+    background: #999;
+    z-index: 10;
+    left: 25px;
+}
+  
+       
+}

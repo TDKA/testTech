@@ -1,0 +1,103 @@
+
+/* ************ Star  ********************  */
+
+#star {
+    margin-left:135px;
+    margin-top: -50px;
+
+}
+.star {
+  position: relative;
+  
+  display: inline-block;
+  width: 0;
+  height: 0;
+  
+  margin-left: -3.2em;
+  margin-right: .9em;
+  margin-bottom: -.4em;
+  
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #FC0;
+  border-left:   .3em solid transparent;
+
+  /* Controlls the size of the stars. */
+  font-size: 13px;
+}
+  .star:before, 
+  .star:after {
+    content: '';
+    
+    display: block;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    right: -100px;
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   1em solid transparent;
+  
+    transform: rotate(-35deg);
+  }
+  
+  .star:after {  
+    transform: rotate(35deg);
+  }
+
+
+   /* ****************** */
+         /* Responsive */
+    /* ****************** */
+  @media (max-width: 767px) {
+
+    #star {
+    margin-left:104px;
+    margin-top: -42px;
+
+}
+.star {
+  position: relative;
+  
+  display: inline-block;
+  width: 0;
+  height: 0;
+  
+  margin-left: -3.2em;
+  margin-right: .9em;
+  margin-bottom: -.4em;
+  
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #FC0;
+  border-left:   .3em solid transparent;
+
+  /* Controlls the size of the stars. */
+  font-size: 11px;
+}
+  .star:before, 
+  .star:after {
+    content: '';
+    
+    display: block;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    right: -100px;
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   1em solid transparent;
+  
+    transform: rotate(-35deg);
+  }
+  
+  .star:after {  
+    transform: rotate(35deg);
+  }
+
+
+  }

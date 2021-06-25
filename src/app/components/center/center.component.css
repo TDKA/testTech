@@ -1,0 +1,17 @@
+main {
+    background: #f4f4f4;
+    height: 100vh;
+    
+}
+
+
+ /* ****************** */
+         /* Responsive */
+    /* ****************** */
+
+
+@media (min-width: 576px) {
+    main {
+        margin-top:30px
+    }
+}

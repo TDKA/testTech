@@ -1,0 +1,38 @@
+
+.box {
+    background: #fff;
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
+}
+
+ /* ****************** */
+         /* Overlay box  */
+    /* ****************** */
+.box::before {
+  
+      position: absolute;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(253, 253, 253, 0.267);
+      z-index: 1;
+      border-radius: 20px;
+    
+    }
+
+     /* ****************** */
+         /* Responsive */
+    /* ****************** */
+    @media (max-width: 576px) {
+  
+    .box  {
+        margin-left: -50px;
+        margin-right: 20px;
+        width: 100vw;
+        padding-top: 15px;
+    }
+  
+       
+}
